@@ -15,6 +15,20 @@ I will also be testing if having a greater distance between gpus leads to better
 
 ## Setup
 
+TODO: add a table with the hardware 
+
+TODO: add a picture of the computer
+
+TODO: picture of the motherboard showing the PCI ports
+
+Experiments to run:
+
+* Single gpu on all the PCIe ports
+* Two gpus in all the possible combinations.
+  * Independent trainings
+  * Training with the two gpus
+
+Compare training speed and temperature of the gpus.
 
 
 ## Results
