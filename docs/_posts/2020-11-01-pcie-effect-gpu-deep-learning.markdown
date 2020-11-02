@@ -19,7 +19,7 @@ TODO: add a table with the hardware
 
 TODO: add a picture of the computer
 
-TODO: picture of the motherboard showing the PCI ports
+![picture of the motherboard pcie ports](res/2020-11-02-10-36-31.png)
 
 Experiments to run:
 
