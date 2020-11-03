@@ -11,6 +11,7 @@ categories: GPU "deep learning"
 ## Goal
 
 The goal of this experiment is to find if using X4 PCIe has an impact in performance when using the GPUs for Deep Learning.
+
 I'm currently designing my new PC and I need that information to choose the motherboard. I have found a [comparison for X16 vs X8](https://www.pugetsystems.com/labs/hpc/PCIe-X16-vs-X8-with-4-x-Titan-V-GPUs-for-Machine-Learning-1167/#pcie-x16-vs-x8-vgg-in-keras-tensorflow-disk-streaming-25000-images-brtitan-v-gpus-br-training-time-for-4-epochs)
 but I have been unable to find information for X4.
 
@@ -76,6 +77,35 @@ be caused by hotter GPU.
 
 ### Relation between GPU temperature and frequency
 
+On some of the trainings I have logged the GPU frequency and temperature using `nvidia-smi`. I want
+to see how the frequency is decreased when reaching high temperatures. This information could be helpful
+to decide if liquid cooling is worth it.
+
+On this training the gpus were very close and temperatures raised to 90ºC.
+
+![temperature and frequency evolution](/res/2020-11-03-18-17-57.png)
+
+This training was colder.
+
+![temperature and frequency evolution](/res/2020-11-03-18-18-17.png)
+
+This also was colder.
+
+![temperature and frequency evolution](/res/2020-11-03-18-18-35.png)
+
+It seems that only when the temperature is bigger than 80ºC that the effect on frequency is big.
+If the temperature is around 80ºC then the frequency will only drop from 1850 to 1820 which is a slowdown
+of just ~1.5%. However in the training that the temperature raised to near 90ºC the frequency was
+decreased to 1650 MHz, which is a slowdown of 13%.
+
+When using liquid cooling I have seen that temperatures could be kept between 50 and 60ºC. Considering
+that temperatures around 80ºC are fine I don't think liquid cooling should be recomended.
+
+### Bonus: Training with an external fan
+
+Just for fun I have trained with a single gpu on X16 with the case open and a big external fan.
+
 ## Summary
 
 A slowdown has been observed both when using single gpu training and dual gpu training.
+Thus it is not recommended to use X8 and X4 PCIe slots for a GPU for deep learning.
