@@ -15,11 +15,15 @@ I will also be testing if having a greater distance between gpus leads to better
 
 ## Setup
 
-TODO: add a table with the hardware 
+| hardware    | model                                                                |
+|-------------|----------------------------------------------------------------------|
+| motherboard | [Z170A SLI PLUS](https://es.msi.com/Motherboard/Z170A-SLI-PLUS.html) |
+| gpus        | 2x 1080                                                              |
+| cpu         | Intel Core i7-6700K 4.0 Ghz 4core                                    |
 
 TODO: add a picture of the computer
 
-![picture of the motherboard pcie ports](/assets/2020-11-02-10-36-31.png)
+![picture of the motherboard pcie ports](/res/2020-11-02-10-36-31.png)
 
 Experiments to run:
 
@@ -32,5 +36,19 @@ Compare training speed and temperature of the gpus.
 
 
 ## Results
+
+### Single GPU
+
+On this experiments I simply moved the GPU over all PCIe slots and performed the same training.
+Placing the GPU on PCIe6 was difficult because there are some connections of the motherboard below
+that slot and I had to remove them all. I had to use an screwboard after removing the connections.
+
+TODO: picture of the wires
+
+![](res/2020-11-03-15-33-10.png)
+
+
+
+### Double GPU
 
 ## Summary
