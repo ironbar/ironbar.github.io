@@ -24,7 +24,7 @@ I will also be testing if having a greater distance between gpus leads to better
 | gpus        | 2x 1080                                                              |
 | cpu         | Intel Core i7-6700K 4.0 Ghz 4core                                    |
 
-![picture of the computer](res/2020-11-03-18-28-37.png)
+![picture of the computer](/res/2020-11-03-18-28-37.png)
 
 ![picture of the motherboard pcie ports](/res/2020-11-02-10-36-31.png)
 
