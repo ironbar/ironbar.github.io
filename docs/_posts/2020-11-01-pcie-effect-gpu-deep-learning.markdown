@@ -45,10 +45,18 @@ that slot and I had to remove them all. I had to use an screwboard after removin
 
 TODO: picture of the wires
 
-![](res/2020-11-03-15-33-10.png)
+![time per epoch](/res/2020-11-03-15-33-10.png)
 
+![GPU temperature](/res/2020-11-03-15-41-47.png)
 
+| PCIe | epoch time (s) | slowdown    |
+|------|----------------|-------------|
+| X16  | 30.92          | 0           |
+| X8   | 31.61          | 2.1%        |
+| X4   | 32.51 (32.93)  | 4.9% (6.1%) |
 
 ### Double GPU
+
+
 
 ## Summary
