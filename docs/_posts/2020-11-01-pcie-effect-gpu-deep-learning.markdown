@@ -5,6 +5,9 @@ date:   2020-11-01 17:06:14 +0100
 categories: GPU "deep learning"
 ---
 
+* TOC
+{:toc}
+
 ## Goal
 
 The goal of this experiment is to find if using X4 PCIe has an impact in performance when using the GPUs for Deep Learning.
@@ -56,8 +59,6 @@ TODO: picture of the wires
 
 ### Double GPU
 
-### Relation between GPU temperature and frequency
-
 ![time per epoch](/res/2020-11-03-15-48-04.png)
 
 | PCIe   | epoch time (s) | slowdown |
@@ -72,6 +73,8 @@ thus the temperature was higher. So part of the slowdown of that experiment coul
 be caused by hotter GPU.
 
 ![GPU temperature](/res/2020-11-03-15-50-50.png)
+
+### Relation between GPU temperature and frequency
 
 ## Summary
 
