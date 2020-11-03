@@ -24,7 +24,7 @@ I will also be testing if having a greater distance between gpus leads to better
 | gpus        | 2x 1080                                                              |
 | cpu         | Intel Core i7-6700K 4.0 Ghz 4core                                    |
 
-TODO: add a picture of the computer
+![picture of the computer](res/2020-11-03-18-28-37.png)
 
 ![picture of the motherboard pcie ports](/res/2020-11-02-10-36-31.png)
 
@@ -45,7 +45,9 @@ On this experiments I simply moved the GPU over all PCIe slots and performed the
 Placing the GPU on PCIe6 was difficult because there are some connections of the motherboard below
 that slot and I had to remove them all. I had to use an screwboard after removing the connections.
 
-TODO: picture of the wires
+Those wires at the bottom of the motherboard had to be removed to be able to plug the GPU to PCIe6.
+
+![wires at the bottom](/res/2020-11-03-18-29-08.png)
 
 ![time per epoch](/res/2020-11-03-15-33-10.png)
 
@@ -103,6 +105,8 @@ that temperatures around 80ºC are fine I don't think liquid cooling should be r
 ### Bonus: Training with an external fan
 
 Just for fun I have trained with a single gpu on X16 with the case open and a big external fan.
+
+TODO:
 
 ## Summary
 
