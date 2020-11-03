@@ -57,6 +57,16 @@ TODO: picture of the wires
 
 ### Double GPU
 
+### Relation between GPU temperature and frequency
 
+![time per epoch](/res/2020-11-03-15-48-04.png)
+
+![GPU temperature](/res/2020-11-03-15-50-50.png)
+
+| PCIe   | epoch time (s) | slowdown |
+|--------|----------------|----------|
+| X16 X4 | 36.81          | 7.7%     |
+| X8 X4  | 37.46          | 9.2%     |
+| X16 X8 | 33.98          | 0        |
 
 ## Summary
