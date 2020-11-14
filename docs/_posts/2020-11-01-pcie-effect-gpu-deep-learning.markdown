@@ -106,7 +106,16 @@ that temperatures around 80ºC are fine I don't think liquid cooling should be r
 
 Just for fun I have trained with a single gpu on X16 with the case open and a big external fan.
 
-TODO:
+![picture of the setup](/res/2020-11-14-11-28-59.png)
+
+![temperature was cooler](/res/2020-11-14-11-25-16.png)
+
+The temperature when using the external fan was around 1.5ºC lower, so this implies that current
+case has good enough airflow.
+
+![epoch time was slightly better](/res/2020-11-14-11-27-31.png)
+
+The epoch time was slightly better, around 0.6% faster (0.2 seconds).
 
 ## Summary
 
